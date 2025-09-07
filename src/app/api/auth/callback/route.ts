@@ -34,7 +34,13 @@ export async function GET(req: Request) {
     create: { email: u.email, name: u.name, avatarUrl: u.picture }
   })
 
-  setSession({ userId: user.id, email: user.email, name: user.name, avatarUrl: user.avatarUrl || undefined })
+  setSession({
+  userId: user.id ?? "",
+  email: user.email ?? "",
+  name: user.name ?? "",
+  avatarUrl: user.avatarUrl ?? undefined
+});
+
 
   return Response.redirect(new URL('/', url).toString(), 302)
 }
