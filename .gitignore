@@ -1,0 +1,45 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+dist/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Prisma
+/dev.db
+*.sqlite
+*.sqlite-journal
+
+# Logs
+logs
+*.log
+*.csv
+*.dat
+*.pid
+*.seed
+*.pid.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.swm
+
+# Misc
+coverage/
