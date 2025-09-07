@@ -39,7 +39,11 @@ export async function GET(req: Request) {
   email: user.email ?? "",
   name: user.name ?? "",
   avatarUrl: user.avatarUrl ?? undefined
+<<<<<<< HEAD
 });
+=======
+  });
+>>>>>>> 58b5847b702b1714a45457238bd5cacc4bcb245c
 
 
   return Response.redirect(new URL('/', url).toString(), 302)
