@@ -1,5 +1,5 @@
 import { google } from '@/lib/google'
-import { prisma } from '../../../lib/prisma'
+import { prisma } from '@/lib/prisma'
 import { setSession } from '@/lib/session'
 
 export async function GET(req: Request) {
