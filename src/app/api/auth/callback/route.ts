@@ -35,10 +35,10 @@ export async function GET(req: Request) {
   })
 
   setSession({
-  userId: user.id ?? "",
+  userId: String(user.id),   // ✅ convert Int → string
   email: user.email ?? "",
   name: user.name ?? "",
   avatarUrl: user.avatarUrl ?? undefined
-  });
+});
   return Response.redirect(new URL('/', url).toString(), 302)
 }
